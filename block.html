@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="style/user-style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-center">
+			<div class="block-container">
+
+				<div class="message">
+					<img width="64" height="64" src="avatar.png">
+					<div class="pic">
+						<h2>Test User</h2>
+						<img src="spaghetti.png">
+						<div class="msg-footer">
+							2016-5-7
+							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							57
+						</div>
+					</div>
+				</div>
+
+				<div class="message">
+					<img width="64" height="64" src="avatar.png">
+					<div class="pic">
+						<h2>Test User</h2>
+						<img src="spaghetti.png">
+						<div class="msg-footer">
+							2016-5-7
+							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							57
+						</div>
+					</div>
+				</div>
+
+				<div class="message">
+					<img width="64" height="64" src="avatar.png">
+					<div class="pic">
+						<h2>Test User</h2>
+						<img src="spaghetti.png">
+						<div class="msg-footer">
+							2016-5-7
+							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							57
+						</div>
+					</div>
+				</div>
+
+				<div class="message">
+					<img width="64" height="64" src="avatar.png">
+					<div class="pic">
+						<h2>Test User</h2>
+						<img src="spaghetti.png">
+						<div class="msg-footer">
+							2016-5-7
+							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							57
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="pagination">
+				<a href="block.html"></a>
+				<a href="block.html" class="next"></a>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ias.min.js"></script>
+	<script>
+		var ias = $.ias({
+		container: ".block-container",
+		item: ".message",
+		pagination: "#pagination",
+		next: "a.next"
+		});
+
+		ias.extension(new IASSpinnerExtension());            // shows a spinner (a.k.a. loader)
+		ias.extension(new IASTriggerExtension({ offset: 3 })); // shows a trigger after page 3
+		ias.extension(new IASNoneLeftExtension({
+			text: 'There are no more pages left to load.'      // override text when no pages left
+		}));
+	</script>
+</body>
+
+</html>
