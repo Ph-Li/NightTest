@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 
+	<title>Fly Message</title>
+
+	<link rel="shortcut icon" href="asset/huaji.ico">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
@@ -13,11 +16,11 @@
 <body>
 	<div class="header">
 		<div id="logo">
-			<embed id="plane" src="paper-plane.svg"></embed>
+			<embed id="plane" src="asset/paper-plane.svg"></embed>
 			<div>Fly Message</div>
 		</div>
 		<div id="usrinfo">
-			<img src="avatar.png">
+			<img src="asset/avatar.png">
 			<div id="welc">Welcome, Test User</div>
 		</div>
 	</div>
@@ -55,7 +58,7 @@
 			</div>
 			<div class="block-container">
 				<div class="message">
-					<img width="64" height="64" src="avatar.png">
+					<img width="64" height="64" src="asset/avatar.png">
 					<div class="msg-content">
 						<div class="msg-text">
 							<h2>Test User</h2>
@@ -67,43 +70,43 @@
 						</div>
 						<div class="msg-footer">
 							2016-5-7
-							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							<embed id="plane" width="10" height="10" src="asset/like.svg"></embed>
 							57
 						</div>
 					</div>
 				</div>
 				<div class="message">
-					<img width="64" height="64" src="avatar.png">
+					<img width="64" height="64" src="asset/avatar.png">
 					<div class="pic">
 						<h2>Test User</h2>
-						<img src="spaghetti.png">
+						<img src="asset/spaghetti.png">
 						<div class="msg-footer">
 							2016-5-7
-							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							<embed id="plane" width="10" height="10" src="asset/like.svg"></embed>
 							57
 						</div>
 					</div>
 				</div>
 				<div class="message">
-					<img width="64" height="64" src="avatar.png">
+					<img width="64" height="64" src="asset/avatar.png">
 					<div class="pic">
 						<h2>Test User</h2>
-						<img src="spaghetti.png">
+						<img src="asset/spaghetti.png">
 						<div class="msg-footer">
 							2016-5-7
-							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							<embed id="plane" width="10" height="10" src="asset/like.svg"></embed>
 							57
 						</div>
 					</div>
 				</div>
 				<div class="message">
-					<img width="64" height="64" src="avatar.png">
+					<img width="64" height="64" src="asset/avatar.png">
 					<div class="pic">
 						<h2>Test User</h2>
-						<img src="spaghetti.png">
+						<img src="asset/spaghetti.png">
 						<div class="msg-footer">
 							2016-5-7
-							<embed id="plane" width="10" height="10" src="like.svg"></embed>
+							<embed id="plane" width="10" height="10" src="asset/like.svg"></embed>
 							57
 						</div>
 					</div>
@@ -120,10 +123,11 @@
 			<div id="window-1">
 				<input type="button" class="btn-x" value="X" onclick="$('#window-1 .window-body').fadeToggle(1000)">
 				<div class="window-body">
-					<img width="103" height="103" src="glasses.png">
-					<div id="txt-1">This T??k</div>
-					<div id="txt-2">We</div>
-					<div id="txt-3">different</div>
+					<canvas id="canvas" width="103" height="159"></canvas>
+					<img width="80" height="80" src="asset/glasses.png">
+					<p id="txt-1">This T??k</p>
+					<p id="txt-2">We</p>
+					<p id="txt-3">different</p>
 				</div>
 			</div>
 			<div id="window-2">

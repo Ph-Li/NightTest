@@ -21,6 +21,7 @@ body {
     background: #00a896;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     fill: white;
+    z-index: 100;
 }
 
 #logo, #usrinfo {
@@ -196,15 +197,23 @@ div.col-right {
     padding: 0;
     background: #d1e9b8;
     border: none;
+    color: #00a896;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-#window-1 img {
+#canvas {
     margin: 0 48px;
 }
 
+#window-1 img {
+    position: absolute;
+    left: 60px;
+    top: 27%;
+    /* margin: 0 48px; */
+}
+
 #txt-1 {
-    margin-left: 16px;
+    margin: 12px 0 0 5px;
     color: #7e7e7e;
     font-size: 14px;    
     text-align: left;
@@ -245,23 +254,25 @@ div.col-right {
 }
 
 #txt-2 {
-    color: #7e7e7e;    
+    margin: 6px 0;
+    color: #7e7e7e;
     font-size: 28px;
     text-align: center;
     animation: rainbow 3.5s linear;
 }
 
 #txt-3 {
-    margin-right: 16px;
-    color: #7e7e7e;    
+    margin: 0 5px 0 0;
+    color: #7e7e7e;
     font-size: 14px;
     text-align: right;
 }
 
 .window-body {
+    position: relative;
     width: 200px;
-    height: 235px;
-    padding-top: 40px;
+    height: 265px;
+    padding-top: 10px;
     background: #d1e9b8;
     border-top: 5px solid #d8d8d8;
 }
@@ -269,12 +280,12 @@ div.col-right {
 #window-2 {
     height: 300px;
     margin-bottom: 12px;
-    /* background: #f0f0f0; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #window-2 .title {
-    
+    margin-left: 8px;
+    color: #00a896;
 }
 
 #carousel {
