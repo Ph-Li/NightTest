@@ -58,7 +58,17 @@
 			</div>
 			<div class="block-container">
 				<div class="message">
-					<img width="64" height="64" src="asset/avatar.png">
+					<div class="avatar">
+						<img width="64" height="64" src="asset/avatar.png">
+						<div class="hovercard">
+							<div class="card-body">
+								<img width="64" height="64" src="asset/avatar.png">
+								<p class="name">User</p>
+							</div>
+							<div class="arrow-shadow"></div>
+							<div class="arrow"></div>
+						</div>
+					</div>
 					<div class="msg-content">
 						<div class="msg-text">
 							<h2>Test User</h2>
@@ -121,7 +131,7 @@
 
 		<div class="col-right">
 			<div id="window-1">
-				<input type="button" class="btn-x" value="X" onclick="$('#window-1 .window-body').fadeToggle(1000)">
+				<input type="button" class="btn-x" value="X" onclick="fade()">
 				<div class="window-body">
 					<canvas id="canvas" width="103" height="159"></canvas>
 					<img width="80" height="80" src="asset/glasses.png">
